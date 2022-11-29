@@ -1,0 +1,73 @@
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.3), rgba(136, 136, 206, 0.2) ), url('https://www.sus.edu/assets/sus/content-type-covid-19.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body{
+   color: aliceblue;
+   margin: 0;
+   width: 100%;
+   height: 100vh;
+   font-size: 16px;
+   font-family: 'Popins', sans-serif;
+}
+h1,p{
+    text-align: center;
+}
+.container{
+    background-color: rgba(102, 102, 149, 0.4);
+    width: 100%;
+    max-width: 540px;
+    display: block;
+    align-items: center;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+label{
+    display: block;
+    margin: 0.5rem 2rem;
+}
+
+input[type="text"],input[type="email"],input[type="number"] {
+    display: block;
+    width: 90%;
+    height: 2.5rem;
+    margin: 0 2rem;
+    border: none;
+    border-radius:10px;
+}
+
+select,textarea{
+    margin: auto 2rem;
+}
+select{
+    width: 75%;
+    height: 2.5rem;
+    font-size:15px ;
+}
+input[type="radio"],input[type="checkbox"]{
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+   
+}
+button{
+    display: block;
+    width: 40%;
+    height: 2.5rem;
+    margin: 1rem auto;
+    background-color: rgba(188, 188, 239, 0.8);
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(132, 132, 225);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SurveyForm</title>
+</head>
+<body>
+    <h1 id="title">Covid Survey Form</h1>
+    <p id="description">Thank you for taking the time to help our Covid Research</p>
+    <div class="container">
+        <form id="survey-form">
+            <label for="name" id="name-label">Name:</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+            <label for="email" id="email-label">Email:</label>
+            <input id="email" type="email" placeholder="Enter your mail" required>
+            <label for="number" id="number-label">Age:</label>
+            <input id="number" type="number" min="18" max="65" placeholder="Age">
+            <label for="dropdown" id="dropdown-label">Which option best describes your job situation in pandemic? </label>
+            <select id="dropdown">
+                <option disabled selected value>Select your role</option>
+                <option value="Student">Student</option>
+                <option value="Full-time Job">Full-time Job</option>
+                <option value="Full-time Remote Job">Full-time Remote Job</option>
+                <option value="Not Working">Not Working</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="radio" id="radio-label">Have you had Covid?</label>
+            <label for="yes-radio"><input id="yes" type="radio" name="quest" value="yes"> Yes</label>
+            <label for="no-radio"><input id="no" type="radio" name="quest" value="no"> No </label>
+            <label for="checkbox" id="checkbox-label">Please select options which is suitable for you.</label>
+            <label for="option-1"><input id="option-1" type="checkbox" value="vaccinated."> I got vaccinated. </label>
+            <label for="option-2"><input id="option-2" type="checkbox" value="vaccinatedmore"> I got vaccinated more than one time. </label>
+            <label for="option-3"><input id="option-3" type="checkbox" value="work"> I go to work in pandemic. </label>
+            <label for="option-4"><input id="option-4" type="checkbox" value="covidone"> I had covid 1 time. </label>
+            <label for="option-5"><input id="option-5" type="checkbox" value="covidtwo"> I had covid 2 time. </label>
+            <label for="option-6"><input id="option-6" type="checkbox" value="covidmore"> I had covid more than 3 time. </label>
+            <label for="comments-symptom" id="comments-symptom-label">You can add your comments and if you had Covid you can add your symptoms.</label>
+            <textarea id="commnet" placeholder="Enter here...." maxlength="500" rows="4" cols="60"></textarea>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    
+
+</body>
+</html>
